@@ -1,0 +1,12 @@
+10. Delete the products which product price value are 28:
+
+db.product.deleteMany({
+    product_price: 28
+})
+
+-----------------------OutPut-------------------------
+
+{
+  acknowledged: true,
+  deletedCount: 1
+}

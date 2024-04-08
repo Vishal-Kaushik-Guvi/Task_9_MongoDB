@@ -1,0 +1,92 @@
+3. Find the product which price is not between 400 to 600.
+
+db.product.find({
+    product_price: {
+        $not: {
+            $gte: 400,
+            $lte: 600
+        }
+    }
+})
+--------------------output--------------------------------
+
+{
+  _id: ObjectId('6612b10912a1b30daed05305'),
+  id: '1',
+  product_name: 'Intelligent Fresh Chips',
+  product_price: 655,
+  product_material: 'Concrete',
+  product_color: 'mint green'
+}
+{
+  _id: ObjectId('6612b10912a1b30daed05306'),
+  id: '2',
+  product_name: 'Practical Fresh Sausages',
+  product_price: 911,
+  product_material: 'Cotton',
+  product_color: 'indigo'
+}
+{
+  _id: ObjectId('6612b10912a1b30daed0530d'),
+  id: '9',
+  product_name: 'Awesome Wooden Ball',
+  product_price: 28,
+  product_material: 'Soft',
+  product_color: 'azure'
+}
+{
+  _id: ObjectId('6612b10912a1b30daed0530e'),
+  id: '10',
+  product_name: 'Generic Wooden Pizza',
+  product_price: 84,
+  product_material: 'Frozen',
+  product_color: 'indigo'
+}
+{
+  _id: ObjectId('6612b10912a1b30daed0530f'),
+  id: '11',
+  product_name: 'Unbranded Wooden Cheese',
+  product_price: 26,
+  product_material: 'Soft',
+  product_color: 'black'
+}
+{
+  _id: ObjectId('6612b10912a1b30daed05312'),
+  id: '14',
+  product_name: 'Incredible Steel Shirt',
+  product_price: 54,
+  product_material: 'Metal',
+  product_color: 'white'
+}
+{
+  _id: ObjectId('6612b10912a1b30daed05315'),
+  id: '17',
+  product_name: 'Incredible Metal Car',
+  product_price: 36,
+  product_material: 'Fresh',
+  product_color: 'indigo'
+}
+{
+  _id: ObjectId('6612b10912a1b30daed05317'),
+  id: '19',
+  product_name: 'Intelligent Cotton Chips',
+  product_price: 46,
+  product_material: 'Soft',
+  product_color: 'azure'
+}
+{
+  _id: ObjectId('6612b10912a1b30daed05318'),
+  id: '20',
+  product_name: 'Handcrafted Wooden Bacon',
+  product_price: 36,
+  product_material: 'Concrete',
+  product_color: 'lime'
+}
+{
+  _id: ObjectId('6612b10912a1b30daed0531d'),
+  id: '25',
+  product_name: 'Licensed Steel Car',
+  product_price: 20,
+  product_material: 'Cotton',
+  product_color: 'indigo'
+}
